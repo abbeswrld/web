@@ -1,2 +1,2 @@
-# web
-Проект по Web 2 курс 
+# summerPractice
+trying to follow SOLID principe
