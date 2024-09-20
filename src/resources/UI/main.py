@@ -1,15 +1,20 @@
 import sys
 from PyQt5.QtWidgets import *
 from PyQt5 import uic
+from PyQt5.QtGui import QPixmap
 
 class Test(QMainWindow):
     def __init__(self):
         super().__init__()
         self.initUI()
 
+        pixmap = QPixmap("14.png")
+
+        # Устанавливаем картинку в QLabel
+        self.image.setPixmap(pixmap)
+
     def initUI(self):
-        self.text = ''
-        uic.loadUi('main.ui', self)
+        uic.loadUi('main_v2.ui', self)
 
 
 
@@ -19,13 +24,3 @@ if __name__ == '__main__':
     ex = Test()
     ex.show()
     sys.exit(app.exec())
-
-
-
-
-
-
-
-
-
-

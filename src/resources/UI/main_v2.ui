@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>610</width>
+    <width>615</width>
     <height>468</height>
    </rect>
   </property>
@@ -196,17 +196,33 @@
      </widget>
     </widget>
     <widget class="QWidget" name="png">
-     <widget class="QLabel" name="label">
+     <widget class="QLabel" name="image">
       <property name="geometry">
        <rect>
-        <x>160</x>
-        <y>120</y>
-        <width>221</width>
-        <height>191</height>
+        <x>60</x>
+        <y>20</y>
+        <width>611</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="swap_image">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>420</y>
+        <width>111</width>
+        <height>23</height>
        </rect>
       </property>
       <property name="text">
-       <string>TextLabel</string>
+       <string>Смени картинку)))</string>
       </property>
      </widget>
     </widget>
