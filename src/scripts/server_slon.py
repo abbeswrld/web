@@ -18,13 +18,6 @@ class Server:
         except Exception as e:
             return str(e)
 
-    def send_message_to_client(self, mess: str):
-        try:
-            self.__connection.send(mess.encode())
-            return "successfully"
-        except Exception as e:
-            return str(e)
-
     def handle_message_from_client(self):
         while True:
             data = self.__connection.recv(1024)
@@ -40,4 +33,3 @@ class Server:
 s = Server()
 s.start_server_listen()
 s.handle_message_from_client()
-s.send_message_to_client("qwe")
