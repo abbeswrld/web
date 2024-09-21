@@ -11,7 +11,7 @@ class Example(QWidget):
 
     def initUI(self):
         hbox = QHBoxLayout(self)
-        pixmap = QPixmap("20.png")
+        pixmap = QPixmap("../resources/images/20.png")
         lbl = QLabel(self)
         lbl.setPixmap(pixmap)
         hbox.addWidget(lbl)
@@ -20,9 +20,3 @@ class Example(QWidget):
         self.move(100, 200)
         self.setWindowTitle('Red Rock')
         self.show()
-
-
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ex = Example()
-    sys.exit(app.exec_())
