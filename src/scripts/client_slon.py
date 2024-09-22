@@ -2,16 +2,18 @@ import socket
 
 
 class Client:
-	def __init__(self):
+	def __init__(self, client_UI):
+		self.__client_UI = client_UI
 		self.__socket = socket.socket()
 
-	def connect_to_server(self, hostname="mamin_papa_ded", port=1234):
+	def connect_to_server(self, hostname, port):
+		hostname = hostname if hostname else "mamin_papa_ded"
+		port = int(port) if port else 1234
 		try:
 			self.__socket.connect((hostname, port))
-			return hostname, port
-		except Exception as e:
-			return str(e)
+			return True
+		except:
+			return False
 
-	def send_message_to_server(self, message):
-		message = message.encode() if type(message) is str else message
-		print(self.__socket.send(message))
+	def send_message_to_server_to_change_image(self):
+		self.__socket.send("change_image".encode())

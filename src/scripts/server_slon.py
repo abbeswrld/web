@@ -3,7 +3,8 @@ import threading
 
 
 class Server:
-    def __init__(self, hostname, port):
+    def __init__(self, serverUI, hostname, port):
+        self.__server_UI = serverUI
         self.__socket = socket.socket()
         self.__hostname = hostname if hostname else "mamin_papa_ded"
         self.__port = port if port else 1234
@@ -32,7 +33,7 @@ class Server:
             if not data:
                 break
             if data.decode() == "change_image":
-
+                self.__server_UI.update_image_pixmap()
 
     def close_connection_with_client(self):
         self.__connection.close()

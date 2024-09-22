@@ -119,7 +119,7 @@
      </widget>
     </widget>
     <widget class="QWidget" name="button_page_ui">
-     <widget class="QPushButton" name="main_button">
+     <widget class="QPushButton" name="mainbutton">
       <property name="geometry">
        <rect>
         <x>200</x>
