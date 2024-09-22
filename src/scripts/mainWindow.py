@@ -10,9 +10,13 @@ class Image:
 	def __init__(self):
 		self.__index = 1  # an int num between 1 and 20
 		self._pixmap = QPixmap(self.index_to_string())
+		self.__indexes = [i for i in range(1, 21)]
 
 	def index_to_string(self):
 		return f"src/resources/images/{self.__index}.png"
+
+	def __fill_index_array(self):
+		self.__indexes = [i for i in range(1, 21)]
 
 	@property
 	def pixmap(self):
@@ -22,8 +26,10 @@ class Image:
 		self._pixmap = QPixmap(self.index_to_string())
 
 	def update_image_index(self):
-		self.__index = random.randint(1, 21)
-
+		self.__index = random.choice(self.__indexes)
+		self.__indexes.remove(self.__index)
+		if len(self.__indexes) == 0:
+			self.__fill_index_array()
 
 
 class MainWindow(QMainWindow):
