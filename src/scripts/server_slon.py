@@ -3,10 +3,10 @@ import threading
 
 
 class Server:
-    def __init__(self, serverUI, hostname, port):
+    def __init__(self, serverUI, port):
         self.__server_UI = serverUI
         self.__socket = socket.socket()
-        self.__hostname = hostname if hostname else "mamin_papa_ded"
+        self.__hostname = socket.gethostname()
         self.__port = port if port else 1234
         self.__connection = None
         self.__client_addresses = []
@@ -38,3 +38,9 @@ class Server:
     def close_connection_with_client(self):
         self.__connection.close()
         self.__connection = None
+
+    def get_hostname(self):
+        return self.__hostname
+
+    def get_port(self):
+        return self.__port

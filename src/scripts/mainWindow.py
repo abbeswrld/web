@@ -5,7 +5,6 @@ from PyQt5.QtWidgets import QMainWindow
 from src.scripts.server_slon import Server
 from src.scripts.client_slon import Client
 
-
 class Image:
 	def __init__(self):
 		self.__index = 1  # an int num between 1 and 20
@@ -48,7 +47,7 @@ class MainWindow(QMainWindow):
 
 	def on_create_host_button_click(self):
 		try:
-			self.__server = Server(self, *self.get_input())
+			self.__server = Server(self, self.get_input()[1])
 			self.__server.start_server_thread()
 			self.translate_ui("image")
 		except Exception as e:
@@ -69,6 +68,9 @@ class MainWindow(QMainWindow):
 	def translate_ui(self, name: str):
 		try:
 			self.stacked.setCurrentIndex(self.__pages[name])
+			if name == "image":
+				self.label_2.setText(self.__server.get_hostname()) # TODO: rename labels, handle exceptions
+				self.label_4.setText(str(self.__server.get_port()))
 		except Exception as e:
 			print(e)
 
