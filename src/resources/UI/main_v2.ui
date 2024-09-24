@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="main_page_ui">
      <widget class="QPushButton" name="find_server_btn">
@@ -150,7 +150,7 @@
         padding-top: 17px;
         padding-bottom: 13px;
     }
-    
+
 
 </string>
       </property>
@@ -180,49 +180,69 @@
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>420</y>
-        <width>71</width>
-        <height>16</height>
+        <y>410</y>
+        <width>81</width>
+        <height>31</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
       <property name="text">
-       <string>Ваш хостнейм</string>
+       <string>Hostname:</string>
       </property>
      </widget>
-     <widget class="QLabel" name="yours_hostname">
+     <widget class="QLabel" name="hostname">
       <property name="geometry">
        <rect>
-        <x>80</x>
-        <y>420</y>
-        <width>71</width>
-        <height>16</height>
+        <x>90</x>
+        <y>410</y>
+        <width>131</width>
+        <height>31</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
       <property name="text">
-       <string>ХОСТНЕЙМ</string>
+       <string>ХОСТ</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_3">
       <property name="geometry">
        <rect>
-        <x>150</x>
-        <y>420</y>
-        <width>51</width>
-        <height>16</height>
+        <x>240</x>
+        <y>410</y>
+        <width>41</width>
+        <height>31</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
       </property>
       <property name="text">
-       <string>Ваш порт</string>
+       <string>Port:</string>
       </property>
      </widget>
-     <widget class="QLabel" name="yours_port">
+     <widget class="QLabel" name="port">
       <property name="geometry">
        <rect>
-        <x>210</x>
-        <y>420</y>
-        <width>101</width>
-        <height>16</height>
+        <x>290</x>
+        <y>410</y>
+        <width>191</width>
+        <height>31</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
       </property>
       <property name="text">
        <string>ПОРТ</string>
