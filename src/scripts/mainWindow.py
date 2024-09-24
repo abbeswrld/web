@@ -5,7 +5,6 @@ from PyQt5.QtWidgets import QMainWindow
 from src.scripts.server_slon import Server
 from src.scripts.client_slon import Client
 
-
 class Image:
 	def __init__(self):
 		self.__index = 1  # an int num between 1 and 20
@@ -22,12 +21,13 @@ class Image:
 	def pixmap(self):
 		return self._pixmap
 
-	def update_pixmap(self):
+	def __update_pixmap(self):
 		self._pixmap = QPixmap(self.index_to_string())
 
 	def update_image_index(self):
 		self.__index = random.choice(self.__indexes)
 		self.__indexes.remove(self.__index)
+		self.__update_pixmap()
 		if len(self.__indexes) == 0:
 			self.__fill_index_array()
 
@@ -48,7 +48,7 @@ class MainWindow(QMainWindow):
 
 	def on_create_host_button_click(self):
 		try:
-			self.__server = Server(self, *self.get_input())
+			self.__server = Server(self, self.get_input()[1])
 			self.__server.start_server_thread()
 			self.translate_ui("image")
 		except Exception as e:
@@ -69,12 +69,14 @@ class MainWindow(QMainWindow):
 	def translate_ui(self, name: str):
 		try:
 			self.stacked.setCurrentIndex(self.__pages[name])
+			if name == "image":
+				self.label_2.setText(self.__server.get_hostname())
+				self.label_4.setText(str(self.__server.get_port()))
 		except Exception as e:
 			print(e)
 
 	def update_image_pixmap(self):
 		self.__image.update_image_index()
-		self.__image.update_pixmap()
 		self.image.setPixmap(self.__image.pixmap)
 
 	def on_mainbutton_click(self):
