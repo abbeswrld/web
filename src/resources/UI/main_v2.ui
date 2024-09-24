@@ -146,7 +146,7 @@
         background-color: #B22222;
     }
     QPushButton:pressed {
-        background-color: #b30000;
+        background-color: #8a1d1d;
         padding-top: 17px;
         padding-bottom: 13px;
     }
@@ -156,42 +156,6 @@
       </property>
       <property name="text">
        <string/>
-      </property>
-     </widget>
-     <widget class="QLabel" name="port_info">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>420</y>
-        <width>51</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>16</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Port:</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="port_current">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>420</y>
-        <width>111</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>16</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>ПОРТ ТУТ</string>
       </property>
      </widget>
     </widget>
@@ -212,17 +176,56 @@
        <string/>
       </property>
      </widget>
-     <widget class="QPushButton" name="swap_image">
+     <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
-        <x>240</x>
+        <x>0</x>
         <y>420</y>
-        <width>111</width>
-        <height>23</height>
+        <width>71</width>
+        <height>16</height>
        </rect>
       </property>
       <property name="text">
-       <string>Смени картинку)))</string>
+       <string>Ваш хостнейм</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="yours_hostname">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>420</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ХОСТНЕЙМ</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>420</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Ваш порт</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="yours_port">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>420</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ПОРТ</string>
       </property>
      </widget>
     </widget>
