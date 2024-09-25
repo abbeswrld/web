@@ -12,7 +12,7 @@ PyQT5 5.15.10
 ## Motivation
 Project objective - Figure out how to connect two computers
 
-# To do
+# Roadmap
 - [x] design a desktop application with buttons and a picture
 - [x] link two computers
 - [x] connect the button to change the image
