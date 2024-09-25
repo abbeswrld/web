@@ -18,7 +18,7 @@ Project objective - Figure out how to connect two computers
 - [x] connect the button to change the image
 
 # Project team
-[Designer](https://github.com/abbeswrld)
+[Designer](https://github.com/abbeswrld)  
 [Developer](https://github.com/yshelev)
 
 # Sources
