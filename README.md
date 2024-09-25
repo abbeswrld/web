@@ -16,6 +16,7 @@ Project objective - Figure out how to connect two computers
 - [x] design a desktop application with buttons and a picture
 - [x] link two computers
 - [x] connect the button to change the image
+- [ ] make a new project
 
 # Project team
 [Designer](https://github.com/abbeswrld)  
