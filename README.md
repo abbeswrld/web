@@ -5,8 +5,8 @@ When you start the application, the user is offered the choice of becoming a Hos
 P.S. *two pcs must be on the same wifi network*
 
 # Technologies
-Python 3.12
-Socket 3.12
+Python 3.12  
+Socket 3.12  
 PyQT5 5.15.10
 
 ## Motivation
