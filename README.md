@@ -18,7 +18,7 @@ Python, Socket, PyQT5
 [Developer](https://github.com/yshelev)
 
 # Sources
-[idea](https://metanit.com/python/network/1.2.php)
+[Idea](https://metanit.com/python/network/1.2.php)
 
 
 
