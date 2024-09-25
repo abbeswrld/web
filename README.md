@@ -6,14 +6,19 @@ When you start the application, the user is offered the choice of becoming a Hos
 P.S. *two pcs must be on the same wifi network*
 
 # Technologies
-Python, Socket, PyQT5
+Python 3.12
+Socket 3.12
+PyQT5 5.15.10
+
+## Motivation
+Project objective - Figure out how to connect two computers
 
 # To do
 - [x] design a desktop application with buttons and a picture
 - [x] link two computers
 - [x] connect the button to change the image
 
-# Our team
+# Project team
 [Designer](https://github.com/abbeswrld)
 [Developer](https://github.com/yshelev)
 
