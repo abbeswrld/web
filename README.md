@@ -1,5 +1,4 @@
-# Title
-Two personal computers
+# Two personal computer
 
 # Discription 
 When you start the application, the user is offered the choice of becoming a Host or becoming a Client, if you are a client, when you press the button, the host’s picture changes, and if you are the host, then you see a changing picture
