@@ -70,8 +70,8 @@ class MainWindow(QMainWindow):
 		try:
 			self.stacked.setCurrentIndex(self.__pages[name])
 			if name == "image":
-				self.label_2.setText(self.__server.get_hostname())
-				self.label_4.setText(str(self.__server.get_port()))
+				self.label.setText(self.__server.get_hostname())
+				self.label_2.setText(str(self.__server.get_port()))
 		except Exception as e:
 			print(e)
 
