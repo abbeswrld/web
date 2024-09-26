@@ -365,7 +365,7 @@
      <string>х</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="t_znak">
+   <widget class="QPushButton" name="tz">
     <property name="geometry">
      <rect>
       <x>570</x>
