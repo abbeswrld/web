@@ -9,11 +9,15 @@ class ClientWindow(QDialog):
 		uic.loadUi(UI_DIR + "enter.ui", self)
 
 	def get_entered_hostname(self):
-		return self.enter_host.getText()
+		try:
+			return self.enter_host.text()
+		except Exception as e:
+			print(e)
+			return "mamin_papa_ded"
 
 	def get_entered_port(self):
 		try:
-			return int(self.enter_port.getText())
+			return int(self.enter_port.text())
 		except Exception as e:
 			print(e)
 			return 5050
