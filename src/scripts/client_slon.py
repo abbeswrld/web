@@ -1,4 +1,8 @@
 import socket
+import time
+
+from src.scripts.UI.gameWindow import GameWindow
+from src.scripts.game_dir.gameCoordinator import ClientGameCoordinator
 
 
 class Client:
@@ -13,12 +17,19 @@ class Client:
 		hostname = hostname if hostname else "mamin_papa_ded"
 		try:
 			self.__socket.connect((hostname, port))
-			print("connected")
+			time.sleep(0.5)
+			self.on_connect()
 			self.__client_UI.close()
 			return True
 		except Exception as e:
 			print(e)
 			return False
+
+	def on_connect(self):
+		gw = GameWindow()
+		gw.show()
+		ClientGameCoordinator(self, gw)
+		self.__client_UI.destroy()
 
 	def send_message_to_server(self, msg):
 		self.__socket.send(msg.encode())

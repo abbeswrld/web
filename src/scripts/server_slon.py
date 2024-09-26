@@ -23,7 +23,7 @@ class Server:
             self.__connection, current_address = self.__socket.accept()
             if self.__connection:
                 self.on_connect()
-            self.__server_UI.close()
+            self.__server_UI.destroy()
         except Exception as e:
             print(str(e))
 
