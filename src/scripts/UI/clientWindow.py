@@ -1,9 +1,10 @@
 from PyQt5 import uic
-from PyQt5.QtWidgets import QDialog
+from PyQt5.QtWidgets import QMainWindow
+
 from ui_constants import *
 
 
-class ClientWindow(QDialog):
+class ClientWindow(QMainWindow):
 	def __init__(self):
 		super().__init__()
 		uic.loadUi(UI_DIR + "enter.ui", self)

@@ -1,11 +1,10 @@
 from PyQt5 import uic, QtCore
-from PyQt5.QtWidgets import QDialog
-
+from PyQt5.QtWidgets import QMainWindow
 
 from ui_constants import *
 
 
-class ServerWindow(QDialog):
+class ServerWindow(QMainWindow):
 	def __init__(self):
 		super().__init__()
 		self.closed = QtCore.pyqtSignal(str)
