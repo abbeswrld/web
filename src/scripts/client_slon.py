@@ -13,12 +13,15 @@ class Client:
 		hostname = hostname if hostname else "mamin_papa_ded"
 		try:
 			self.__socket.connect((hostname, port))
+			print("connected")
+			self.__client_UI.close()
 			return True
-		except:
+		except Exception as e:
+			print(e)
 			return False
 
 	def send_message_to_server(self, msg):
 		self.__socket.send(msg.encode())
 
-	def handle_message_from_server(self):
+	def get_message_from_server(self):
 		return self.__socket.recv(1024)
