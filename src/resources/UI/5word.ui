@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>638</width>
-    <height>522</height>
+    <height>455</height>
    </rect>
   </property>
   <property name="font">
@@ -23,15 +23,15 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>297</x>
+      <x>290</x>
       <y>10</y>
-      <width>70</width>
-      <height>31</height>
+      <width>58</width>
+      <height>25</height>
      </rect>
     </property>
     <property name="maximumSize">
      <size>
-      <width>70</width>
+      <width>58</width>
       <height>16777215</height>
      </size>
     </property>
@@ -138,7 +138,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>340</y>
+      <y>290</y>
       <width>41</width>
       <height>41</height>
      </rect>
@@ -147,6 +147,9 @@
      <font>
       <pointsize>16</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
     </property>
     <property name="text">
      <string>й</string>
@@ -156,7 +159,7 @@
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>340</y>
+      <y>290</y>
       <width>41</width>
       <height>41</height>
      </rect>
@@ -165,6 +168,9 @@
      <font>
       <pointsize>16</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
     </property>
     <property name="text">
      <string>ц</string>
@@ -174,7 +180,7 @@
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>340</y>
+      <y>290</y>
       <width>41</width>
       <height>41</height>
      </rect>
@@ -183,6 +189,9 @@
      <font>
       <pointsize>16</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
     </property>
     <property name="text">
      <string>у</string>
@@ -192,7 +201,7 @@
     <property name="geometry">
      <rect>
       <x>170</x>
-      <y>340</y>
+      <y>290</y>
       <width>41</width>
       <height>41</height>
      </rect>
@@ -201,6 +210,9 @@
      <font>
       <pointsize>16</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
     </property>
     <property name="text">
      <string>к</string>
@@ -210,7 +222,7 @@
     <property name="geometry">
      <rect>
       <x>220</x>
-      <y>340</y>
+      <y>290</y>
       <width>41</width>
       <height>41</height>
      </rect>
@@ -219,6 +231,9 @@
      <font>
       <pointsize>16</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
     </property>
     <property name="text">
      <string>е</string>
@@ -228,7 +243,7 @@
     <property name="geometry">
      <rect>
       <x>270</x>
-      <y>340</y>
+      <y>290</y>
       <width>41</width>
       <height>41</height>
      </rect>
@@ -237,6 +252,9 @@
      <font>
       <pointsize>16</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
     </property>
     <property name="text">
      <string>н</string>
@@ -246,7 +264,7 @@
     <property name="geometry">
      <rect>
       <x>320</x>
-      <y>340</y>
+      <y>290</y>
       <width>41</width>
       <height>41</height>
      </rect>
@@ -255,6 +273,9 @@
      <font>
       <pointsize>16</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
     </property>
     <property name="text">
      <string>г</string>
@@ -264,7 +285,7 @@
     <property name="geometry">
      <rect>
       <x>370</x>
-      <y>340</y>
+      <y>290</y>
       <width>41</width>
       <height>41</height>
      </rect>
@@ -273,6 +294,9 @@
      <font>
       <pointsize>16</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
     </property>
     <property name="text">
      <string>ш</string>
@@ -282,7 +306,7 @@
     <property name="geometry">
      <rect>
       <x>420</x>
-      <y>340</y>
+      <y>290</y>
       <width>41</width>
       <height>41</height>
      </rect>
@@ -291,6 +315,9 @@
      <font>
       <pointsize>16</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
     </property>
     <property name="text">
      <string>щ</string>
@@ -300,7 +327,7 @@
     <property name="geometry">
      <rect>
       <x>470</x>
-      <y>340</y>
+      <y>290</y>
       <width>41</width>
       <height>41</height>
      </rect>
@@ -309,6 +336,9 @@
      <font>
       <pointsize>16</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
     </property>
     <property name="text">
      <string>з</string>
@@ -318,7 +348,7 @@
     <property name="geometry">
      <rect>
       <x>520</x>
-      <y>340</y>
+      <y>290</y>
       <width>41</width>
       <height>41</height>
      </rect>
@@ -327,6 +357,9 @@
      <font>
       <pointsize>16</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
     </property>
     <property name="text">
      <string>х</string>
@@ -336,6 +369,27 @@
     <property name="geometry">
      <rect>
       <x>570</x>
+      <y>290</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
+    </property>
+    <property name="text">
+     <string>ъ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="hh">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
       <y>340</y>
       <width>41</width>
       <height>41</height>
@@ -346,23 +400,8 @@
       <pointsize>16</pointsize>
      </font>
     </property>
-    <property name="text">
-     <string>ъ</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="hh">
-    <property name="geometry">
-     <rect>
-      <x>290</x>
-      <y>390</y>
-      <width>41</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>16</pointsize>
-     </font>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
     </property>
     <property name="text">
      <string>р</string>
@@ -372,7 +411,7 @@
     <property name="geometry">
      <rect>
       <x>340</x>
-      <y>390</y>
+      <y>340</y>
       <width>41</width>
       <height>41</height>
      </rect>
@@ -381,6 +420,9 @@
      <font>
       <pointsize>16</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
     </property>
     <property name="text">
      <string>о</string>
@@ -390,7 +432,7 @@
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>390</y>
+      <y>340</y>
       <width>41</width>
       <height>41</height>
      </rect>
@@ -399,6 +441,9 @@
      <font>
       <pointsize>16</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
     </property>
     <property name="text">
      <string>ф</string>
@@ -408,7 +453,7 @@
     <property name="geometry">
      <rect>
       <x>190</x>
-      <y>390</y>
+      <y>340</y>
       <width>41</width>
       <height>41</height>
      </rect>
@@ -417,6 +462,9 @@
      <font>
       <pointsize>16</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
     </property>
     <property name="text">
      <string>а</string>
@@ -426,7 +474,7 @@
     <property name="geometry">
      <rect>
       <x>540</x>
-      <y>390</y>
+      <y>340</y>
       <width>41</width>
       <height>41</height>
      </rect>
@@ -435,6 +483,9 @@
      <font>
       <pointsize>16</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
     </property>
     <property name="text">
      <string>э</string>
@@ -444,7 +495,7 @@
     <property name="geometry">
      <rect>
       <x>440</x>
-      <y>390</y>
+      <y>340</y>
       <width>41</width>
       <height>41</height>
      </rect>
@@ -453,6 +504,9 @@
      <font>
       <pointsize>16</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
     </property>
     <property name="text">
      <string>д</string>
@@ -462,7 +516,7 @@
     <property name="geometry">
      <rect>
       <x>390</x>
-      <y>390</y>
+      <y>340</y>
       <width>41</width>
       <height>41</height>
      </rect>
@@ -471,6 +525,9 @@
      <font>
       <pointsize>16</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
     </property>
     <property name="text">
      <string>л</string>
@@ -480,7 +537,7 @@
     <property name="geometry">
      <rect>
       <x>90</x>
-      <y>390</y>
+      <y>340</y>
       <width>41</width>
       <height>41</height>
      </rect>
@@ -489,6 +546,9 @@
      <font>
       <pointsize>16</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
     </property>
     <property name="text">
      <string>ы</string>
@@ -498,7 +558,7 @@
     <property name="geometry">
      <rect>
       <x>240</x>
-      <y>390</y>
+      <y>340</y>
       <width>41</width>
       <height>41</height>
      </rect>
@@ -507,6 +567,9 @@
      <font>
       <pointsize>16</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
     </property>
     <property name="text">
      <string>п</string>
@@ -516,7 +579,7 @@
     <property name="geometry">
      <rect>
       <x>140</x>
-      <y>390</y>
+      <y>340</y>
       <width>41</width>
       <height>41</height>
      </rect>
@@ -525,6 +588,9 @@
      <font>
       <pointsize>16</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
     </property>
     <property name="text">
      <string>в</string>
@@ -534,6 +600,27 @@
     <property name="geometry">
      <rect>
       <x>490</x>
+      <y>340</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
+    </property>
+    <property name="text">
+     <string>ж</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="cc">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
       <y>390</y>
       <width>41</width>
       <height>41</height>
@@ -544,23 +631,8 @@
       <pointsize>16</pointsize>
      </font>
     </property>
-    <property name="text">
-     <string>ж</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="cc">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>440</y>
-      <width>41</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>16</pointsize>
-     </font>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
     </property>
     <property name="text">
      <string>с</string>
@@ -570,7 +642,7 @@
     <property name="geometry">
      <rect>
       <x>420</x>
-      <y>440</y>
+      <y>390</y>
       <width>41</width>
       <height>41</height>
      </rect>
@@ -579,6 +651,9 @@
      <font>
       <pointsize>16</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
     </property>
     <property name="text">
      <string>б</string>
@@ -588,7 +663,7 @@
     <property name="geometry">
      <rect>
       <x>320</x>
-      <y>440</y>
+      <y>390</y>
       <width>41</width>
       <height>41</height>
      </rect>
@@ -597,6 +672,9 @@
      <font>
       <pointsize>16</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
     </property>
     <property name="text">
      <string>т</string>
@@ -606,7 +684,7 @@
     <property name="geometry">
      <rect>
       <x>470</x>
-      <y>440</y>
+      <y>390</y>
       <width>41</width>
       <height>41</height>
      </rect>
@@ -615,6 +693,9 @@
      <font>
       <pointsize>16</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
     </property>
     <property name="text">
      <string>ю</string>
@@ -624,7 +705,7 @@
     <property name="geometry">
      <rect>
       <x>220</x>
-      <y>440</y>
+      <y>390</y>
       <width>41</width>
       <height>41</height>
      </rect>
@@ -633,6 +714,9 @@
      <font>
       <pointsize>16</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
     </property>
     <property name="text">
      <string>м</string>
@@ -642,7 +726,7 @@
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>440</y>
+      <y>390</y>
       <width>41</width>
       <height>41</height>
      </rect>
@@ -651,6 +735,9 @@
      <font>
       <pointsize>16</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
     </property>
     <property name="text">
      <string>ч</string>
@@ -660,7 +747,7 @@
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>440</y>
+      <y>390</y>
       <width>41</width>
       <height>41</height>
      </rect>
@@ -669,6 +756,9 @@
      <font>
       <pointsize>16</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
     </property>
     <property name="text">
      <string>я</string>
@@ -678,7 +768,7 @@
     <property name="geometry">
      <rect>
       <x>270</x>
-      <y>440</y>
+      <y>390</y>
       <width>41</width>
       <height>41</height>
      </rect>
@@ -687,6 +777,9 @@
      <font>
       <pointsize>16</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
     </property>
     <property name="text">
      <string>и</string>
@@ -696,7 +789,7 @@
     <property name="geometry">
      <rect>
       <x>370</x>
-      <y>440</y>
+      <y>390</y>
       <width>41</width>
       <height>41</height>
      </rect>
@@ -705,6 +798,9 @@
      <font>
       <pointsize>16</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
     </property>
     <property name="text">
      <string>ь</string>
@@ -742,13 +838,10 @@ color:white
     </property>
    </widget>
    <widget class="QLabel" name="who_win">
-    <property name="enabled">
-     <bool>false</bool>
-    </property>
     <property name="geometry">
      <rect>
       <x>180</x>
-      <y>150</y>
+      <y>110</y>
       <width>281</width>
       <height>31</height>
      </rect>
@@ -768,9 +861,29 @@ color:white
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>20</y>
+      <width>161</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/pictures/zkugik.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="../PycharmProjects/web/src/resources/UI/pictures.qrc"/>
+ </resources>
  <connections/>
 </ui>
+
+
