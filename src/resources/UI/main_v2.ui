@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="main_page_ui">
      <widget class="QPushButton" name="find_server_btn">
@@ -212,7 +212,7 @@
        <string>ХОСТ</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_3">
+     <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
         <x>240</x>

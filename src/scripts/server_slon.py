@@ -1,16 +1,19 @@
 import socket
 import threading
+from src.scripts.game_dir.gameCoordinator import GameCoordinator
+from src.scripts.UI.gameWindow import GameWindow
 
 
 class Server:
-    def __init__(self, serverUI, port):
+    def __init__(self, serverUI):
         self.__server_UI = serverUI
         self.__socket = socket.socket()
         self.__hostname = socket.gethostname()
-        self.__port = port if port else 1234
+        self.__port = 5050
         self.__connection = None
-        self.__client_addresses = []
         self.__thread = None
+        self.__server_UI.set_label_hostname(self.__hostname)
+        self.__server_UI.set_label_port(self.__port)
 
     def start_server_thread(self):
         self.__thread = threading.Thread(target=self.__start_listen)
@@ -21,23 +24,19 @@ class Server:
             self.__socket.bind((self.__hostname, self.__port))
             self.__socket.listen(1)
             self.__connection, current_address = self.__socket.accept()
-            while self.__connection:
-                self.handle_message_from_client()
+            gw = GameWindow()
+            gw.show()
+
+            self.__server_UI.destroy()
         except Exception as e:
             print(str(e))
             return str(e)
 
     def handle_message_from_client(self):
-        while True:
-            data = self.__connection.recv(1024)
-            if not data:
-                break
-            if data.decode() == "change_image":
-                self.__server_UI.update_image_pixmap()
+        return self.__connection.recv(1024)
 
-    def close_connection_with_client(self):
-        self.__connection.close()
-        self.__connection = None
+    def send_message_to_client(self, msg):
+        self.__connection.send(msg)
 
     def get_hostname(self):
         return self.__hostname
