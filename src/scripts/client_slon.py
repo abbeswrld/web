@@ -1,9 +1,5 @@
 import socket
-import time
-
-from src.scripts.UI.gameWindow import GameWindow
 from src.scripts.game_dir.gameCoordinator import ClientGameCoordinator
-from useful_func import create_and_start_thread
 
 
 class Client:
