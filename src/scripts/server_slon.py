@@ -42,7 +42,7 @@ class Server:
         self.__sgc = ServerGameCoordinator(self, self.__gw)
         self.__server_UI.destroy()
 
-    def handle_message_from_client(self) -> bytes:
+    def get_message_from_client(self) -> bytes:
         return self.__connection.recv(1024)
 
     def send_message_to_client(self, msg: bytes) -> None:

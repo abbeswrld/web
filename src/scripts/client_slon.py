@@ -23,8 +23,8 @@ class Client:
 		self.__cgc = ClientGameCoordinator(self, self.__gw)
 		self.__client_UI.destroy()
 
-	def send_message_to_server(self, msg):
-		self.__socket.send(msg.encode())
+	def send_message_to_server(self, msg: bytes) -> None:
+		self.__socket.send(msg)
 
 	def get_message_from_server(self):
 		return self.__socket.recv(1024)

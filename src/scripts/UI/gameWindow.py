@@ -3,9 +3,7 @@ from PyQt5.QtWidgets import QMainWindow
 from ui_constants import *
 
 
-
 class GameWindow(QMainWindow):
-
 	def __init__(self):
 		super().__init__()
 		uic.loadUi(UI_DIR + "5word.ui", self)
@@ -13,6 +11,8 @@ class GameWindow(QMainWindow):
 
 		self.btns = [btn for btn in self.all_btns if not btn.objectName().startswith("let_")]
 		self.btns_let = [btn for btn in self.all_btns if btn.objectName().startswith("let_")]
+
+		print([btn.objectName() for btn in self.btns_let])
 
 		for btn in self.btns_let:
 			btn.setEnabled(False)
