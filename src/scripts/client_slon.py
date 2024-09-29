@@ -1,4 +1,6 @@
 import socket
+import time
+from src.scripts.UI.gameWindow import GameWindow
 from src.scripts.game_dir.gameCoordinator import ClientGameCoordinator
 
 
@@ -6,23 +8,19 @@ class Client:
 	def __init__(self, client_UI):
 		self.__client_UI = client_UI
 		self.__socket = socket.socket()
-		try:
-			self.__client_UI.button_confirm.clicked.connect(self.connect_to_server)
-		except Exception as e:
-			print(e)
+		self.__client_UI.button_confirm.clicked.connect(self.connect_to_server)
 
 	def connect_to_server(self):
-		try:
-			hostname = self.__client_UI.get_entered_hostname()
-			port = self.__client_UI.get_entered_port()
-			hostname = hostname if hostname else "mamin_papa_ded"
-			self.__socket.connect((hostname, port))
-			self.on_connect()
-		except Exception as e:
-			print(e)
+		hostname = self.__client_UI.get_entered_hostname()
+		port = self.__client_UI.get_entered_port()
+		hostname = hostname if hostname else "mamin_papa_ded"
+		self.__socket.connect((hostname, port))
+		self.on_connect()
 
 	def on_connect(self):
-		ClientGameCoordinator(self)
+		self.__gw = GameWindow()
+		self.__gw.show()
+		self.__cgc = ClientGameCoordinator(self, self.__gw)
 		self.__client_UI.destroy()
 
 	def send_message_to_server(self, msg):

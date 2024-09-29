@@ -15,7 +15,7 @@ class Server:
         self.__server_UI = serverUI
         self.__socket = socket.socket()
         self.__hostname = socket.gethostname()
-        self.__port = 8080
+        self.__port = 9090
         self.__connection = None
         self.__thread = None
         self.signal = self.Signal()
@@ -35,8 +35,11 @@ class Server:
         except Exception as e:
             print(str(e))
 
-    def on_connect(self) -> None:
-        ServerGameCoordinator(self)
+    def on_connect(self, msg) -> None:
+        print(msg)
+        self.__gw = GameWindow()
+        self.__gw.show()
+        self.__sgc = ServerGameCoordinator(self, self.__gw)
         self.__server_UI.destroy()
 
     def handle_message_from_client(self) -> bytes:
