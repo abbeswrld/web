@@ -6,38 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>440</width>
-    <height>158</height>
+    <width>441</width>
+    <height>161</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Expectation</string>
+   <string>Entrance</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>50</y>
-      <width>101</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>16</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Yours port:</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="s_host">
+   <widget class="QLineEdit" name="enter_host">
     <property name="geometry">
      <rect>
       <x>180</x>
       <y>10</y>
-      <width>241</width>
+      <width>221</width>
       <height>31</height>
      </rect>
     </property>
@@ -47,10 +29,28 @@
      </font>
     </property>
     <property name="text">
-     <string>host</string>
+     <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Enter port:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -65,15 +65,15 @@
      </font>
     </property>
     <property name="text">
-     <string>Yours hostname:</string>
+     <string>Enter hostname:</string>
     </property>
    </widget>
-   <widget class="QLabel" name="s_port">
+   <widget class="QLineEdit" name="enter_port">
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>130</x>
       <y>50</y>
-      <width>301</width>
+      <width>221</width>
       <height>31</height>
      </rect>
     </property>
@@ -83,7 +83,20 @@
      </font>
     </property>
     <property name="text">
-     <string>port</string>
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_confirm">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>100</y>
+      <width>78</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>123</string>
     </property>
    </widget>
   </widget>
@@ -92,4 +105,3 @@
  <resources/>
  <connections/>
 </ui>
-

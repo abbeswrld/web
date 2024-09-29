@@ -6,38 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>441</width>
-    <height>161</height>
+    <width>440</width>
+    <height>158</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Entrance</string>
+   <string>Expectation</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLineEdit" name="enter_host_2">
-    <property name="geometry">
-     <rect>
-      <x>180</x>
-      <y>10</y>
-      <width>221</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>16</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_5">
+   <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>50</y>
-      <width>111</width>
+      <width>101</width>
       <height>31</height>
      </rect>
     </property>
@@ -47,10 +29,28 @@
      </font>
     </property>
     <property name="text">
-     <string>Enter port:</string>
+     <string>Yours port:</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_6">
+   <widget class="QLabel" name="s_host">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>10</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>host</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -65,15 +65,15 @@
      </font>
     </property>
     <property name="text">
-     <string>Enter hostname:</string>
+     <string>Yours hostname:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="enter_port_2">
+   <widget class="QLabel" name="s_port">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>120</x>
       <y>50</y>
-      <width>221</width>
+      <width>301</width>
       <height>31</height>
      </rect>
     </property>
@@ -83,7 +83,7 @@
      </font>
     </property>
     <property name="text">
-     <string/>
+     <string>port</string>
     </property>
    </widget>
   </widget>

@@ -1,7 +1,7 @@
 <RCC>
-  <qresource prefix="pictures">
-    <file>zkugik.png</file>
-    <file>kubik.png</file>
+  <qresource prefix="pictures"/>
+  <qresource prefix="./images">
+    <file>../images/zkugik.png</file>
+    <file>../images/kubik.png</file>
   </qresource>
 </RCC>
-

@@ -25,13 +25,13 @@
      <rect>
       <x>290</x>
       <y>10</y>
-      <width>58</width>
+      <width>70</width>
       <height>25</height>
      </rect>
     </property>
     <property name="maximumSize">
      <size>
-      <width>58</width>
+      <width>70</width>
       <height>16777215</height>
      </size>
     </property>
@@ -149,7 +149,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
+     <string notr="true">background-image: url(../images/kubik.png);</string>
     </property>
     <property name="text">
      <string>й</string>
@@ -170,7 +170,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
+     <string notr="true">background-image: url(../images/kubik.png);</string>
     </property>
     <property name="text">
      <string>ц</string>
@@ -191,7 +191,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
+     <string notr="true">background-image: url(../images/kubik.png);</string>
     </property>
     <property name="text">
      <string>у</string>
@@ -212,7 +212,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
+     <string notr="true">background-image: url(../images/kubik.png);</string>
     </property>
     <property name="text">
      <string>к</string>
@@ -233,7 +233,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
+     <string notr="true">background-image: url(../images/kubik.png);</string>
     </property>
     <property name="text">
      <string>е</string>
@@ -254,7 +254,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
+     <string notr="true">background-image: url(../images/kubik.png);</string>
     </property>
     <property name="text">
      <string>н</string>
@@ -275,7 +275,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
+     <string notr="true">background-image: url(../images/kubik.png);</string>
     </property>
     <property name="text">
      <string>г</string>
@@ -296,7 +296,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
+     <string notr="true">background-image: url(../images/kubik.png);</string>
     </property>
     <property name="text">
      <string>ш</string>
@@ -317,7 +317,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
+     <string notr="true">background-image: url(../images/kubik.png);</string>
     </property>
     <property name="text">
      <string>щ</string>
@@ -338,7 +338,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
+     <string notr="true">background-image: url(../images/kubik.png);</string>
     </property>
     <property name="text">
      <string>з</string>
@@ -359,7 +359,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
+     <string notr="true">background-image: url(../images/kubik.png);</string>
     </property>
     <property name="text">
      <string>х</string>
@@ -380,7 +380,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
+     <string notr="true">background-image: url(../images/kubik.png);</string>
     </property>
     <property name="text">
      <string>ъ</string>
@@ -401,7 +401,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
+     <string notr="true">background-image: url(../images/kubik.png);</string>
     </property>
     <property name="text">
      <string>р</string>
@@ -422,7 +422,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
+     <string notr="true">background-image: url(../images/kubik.png);</string>
     </property>
     <property name="text">
      <string>о</string>
@@ -443,7 +443,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
+     <string notr="true">background-image: url(../images/kubik.png);</string>
     </property>
     <property name="text">
      <string>ф</string>
@@ -464,7 +464,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
+     <string notr="true">background-image: url(../images/kubik.png);</string>
     </property>
     <property name="text">
      <string>а</string>
@@ -485,7 +485,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
+     <string notr="true">background-image: url(../images/kubik.png);</string>
     </property>
     <property name="text">
      <string>э</string>
@@ -506,7 +506,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
+     <string notr="true">background-image: url(../images/kubik.png);</string>
     </property>
     <property name="text">
      <string>д</string>
@@ -527,7 +527,8 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
+     <string notr="true">background-image: url(../images/kubik.png);
+</string>
     </property>
     <property name="text">
      <string>л</string>
@@ -548,7 +549,8 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
+     <string notr="true">background-image: url(../images/kubik.png);
+</string>
     </property>
     <property name="text">
      <string>ы</string>
@@ -569,7 +571,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
+     <string notr="true">background-image: url(../images/kubik.png);</string>
     </property>
     <property name="text">
      <string>п</string>
@@ -590,7 +592,8 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
+     <string notr="true">background-image: url(../images/kubik.png);
+</string>
     </property>
     <property name="text">
      <string>в</string>
@@ -611,7 +614,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
+     <string notr="true">background-image: url(../images/kubik.png);</string>
     </property>
     <property name="text">
      <string>ж</string>
@@ -632,7 +635,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
+     <string notr="true">background-image: url(../images/kubik.png);</string>
     </property>
     <property name="text">
      <string>с</string>
@@ -653,7 +656,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
+     <string notr="true">background-image: url(../images/kubik.png);</string>
     </property>
     <property name="text">
      <string>б</string>
@@ -674,7 +677,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
+     <string notr="true">background-image: url(../images/kubik.png);</string>
     </property>
     <property name="text">
      <string>т</string>
@@ -695,7 +698,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
+     <string notr="true">background-image: url(../images/kubik.png);</string>
     </property>
     <property name="text">
      <string>ю</string>
@@ -716,7 +719,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
+     <string notr="true">background-image: url(../images/kubik.png);</string>
     </property>
     <property name="text">
      <string>м</string>
@@ -737,7 +740,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
+     <string notr="true">background-image: url(../images/kubik.png);</string>
     </property>
     <property name="text">
      <string>ч</string>
@@ -758,7 +761,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
+     <string notr="true">background-image: url(../images/kubik.png);</string>
     </property>
     <property name="text">
      <string>я</string>
@@ -779,7 +782,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
+     <string notr="true">background-image: url(../images/kubik.png);</string>
     </property>
     <property name="text">
      <string>и</string>
@@ -800,7 +803,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/pictures/kubik.png);</string>
+     <string notr="true">background-image: url(../images/kubik.png);</string>
     </property>
     <property name="text">
      <string>ь</string>
@@ -871,7 +874,7 @@ color:white
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/pictures/zkugik.png);</string>
+     <string notr="true">image: url(../images/zkugik.png);</string>
     </property>
     <property name="text">
      <string/>
@@ -881,9 +884,7 @@ color:white
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="../PycharmProjects/web/src/resources/UI/pictures.qrc"/>
+  <include location="pictures.qrc"/>
  </resources>
  <connections/>
 </ui>
-
-
