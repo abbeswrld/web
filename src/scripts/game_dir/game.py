@@ -6,6 +6,7 @@ class Game:
 	used_letters: list
 
 	def __init__(self, word):
+		print(word)
 		self.word = list(word)
 		self.reset()
 
