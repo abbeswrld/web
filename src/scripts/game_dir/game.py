@@ -12,6 +12,8 @@ class Game:
 	def on_letter_use(self, letter: str):
 		self.available_letters.remove(letter)
 		self.used_letters.append(letter)
+		if letter in self.word:
+			self.bool_word[self.word.index(letter)] = True
 
 	def change_players_turn(self) -> bool:
 		self.players_turn = not self.players_turn
