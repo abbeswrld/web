@@ -23,11 +23,13 @@ class MainWindow(QMainWindow):
 			print(e)
 
 	def on_find_host_button_click(self):
-		client_ui = ClientWindow()
-		client_ui.show()
-		self.__client = Client(client_ui)
-		self.destroy()
-
+		try:
+			client_ui = ClientWindow()
+			client_ui.show()
+			self.__client = Client(client_ui)
+			self.destroy()
+		except Exception as e:
+			print(e)
 
 
 
