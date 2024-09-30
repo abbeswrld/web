@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="pictures">
+    <file>zkugik.png</file>
+    <file>kubik.png</file>
+  </qresource>
+</RCC>
+
