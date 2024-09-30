@@ -2,6 +2,7 @@ import json
 import random
 
 from src.scripts.game_dir.game import Game
+from src.scripts.music_player import MusicPlayer
 
 from useful_func import create_and_start_thread
 
@@ -17,6 +18,8 @@ class ServerGameCoordinator:
 		self.__game = Game(word)
 		self.__player = player
 		self.__gameUI = UI
+
+		self.__musicPlayer = MusicPlayer()
 
 		self.__gameUI.setWindowTitle("server")
 
@@ -46,6 +49,8 @@ class ServerGameCoordinator:
 
 			else:
 				if data == "end":
+					self.__musicPlayer.play_sound("auto")
+
 					self.__gameUI.end_game(False)
 
 	def send_message_to_clientGC(self, msg):
@@ -66,11 +71,17 @@ class ServerGameCoordinator:
 			self.send_message_to_clientGC(letter)
 
 			self.__gameUI.update_turn(self.__game.players_turn)
+			try:
+				if self.__game.check_win():
 
-			if self.__game.check_win():
-				self.__gameUI.end_game(True)
+					self.__musicPlayer.play_sound("winner_music")
 
-				self.send_message_to_clientGC("end")
+					self.__gameUI.end_game(True)
+
+					self.send_message_to_clientGC("end")
+
+			except Exception as e:
+				print(e)
 
 	def find_button_by_text(self, text):
 		for btn in self.__gameUI.btns:
@@ -78,11 +89,16 @@ class ServerGameCoordinator:
 				return btn
 
 	def update_answer_btns(self, let):
-		if let in self.__game.word:
-			index_of_answer_letter = self.__game.word.index(let)
-			self.__gameUI.btns_let[index_of_answer_letter].setText(let)
-			return True
-		return False
+		try:
+			if let in self.__game.word:
+				index_of_answer_letter = self.__game.word.index(let)
+				self.__gameUI.btns_let[index_of_answer_letter].setText(let)
+				self.__musicPlayer.play_sound("pole_letter_correct")
+				return True
+			self.__musicPlayer.play_sound("pole_letter_wrong")
+			return False
+		except Exception as e:
+			print(e)
 
 class ClientGameCoordinator:
 	def __init__(self, player, UI):
@@ -90,6 +106,8 @@ class ClientGameCoordinator:
 		self.__gameUI = UI
 		word = self.__player.get_message_from_server().decode("utf-8")
 		self.__game = Game(word)
+
+		self.__musicPlayer = MusicPlayer()
 
 		self.__gameUI.setWindowTitle("client")
 
@@ -116,14 +134,13 @@ class ClientGameCoordinator:
 
 			else:
 				if data == "end":
+					self.__musicPlayer.play_sound("mem")
 					self.__gameUI.end_game(False)
 
 	def send_message_to_serverGC(self, msg):
 		self.__player.send_message_to_server(msg.encode("utf-8"))
 
 	def on_button_click(self):
-		print(3)
-		print(self.__game.players_turn)
 		btn = self.__gameUI.sender()
 		if self.__game.players_turn:
 			btn.setEnabled(False)
@@ -141,6 +158,8 @@ class ClientGameCoordinator:
 			self.__gameUI.update_turn(not self.__game.players_turn)
 
 			if self.__game.check_win():
+				self.__musicPlayer.play_sound("winner_music")
+
 				self.__gameUI.end_game(True)
 
 				self.send_message_to_serverGC("end")
@@ -152,12 +171,16 @@ class ClientGameCoordinator:
 				return btn
 
 	def update_answer_btns(self, let):
-		if let in self.__game.word:
-			print("smth")
-			index_of_answer_letter = self.__game.word.index(let)
-			self.__gameUI.btns_let[index_of_answer_letter].setText(let)
-			return True
-		return False
+		try:
+			if let in self.__game.word:
+				index_of_answer_letter = self.__game.word.index(let)
+				self.__gameUI.btns_let[index_of_answer_letter].setText(let)
+				self.__musicPlayer.play_sound("pole_letter_correct")
+				return True
+			self.__musicPlayer.play_sound("pole_letter_wrong")
+			return False
+		except Exception as E:
+			print(E)
 
 
 
