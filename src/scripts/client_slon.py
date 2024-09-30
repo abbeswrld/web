@@ -2,6 +2,7 @@ import socket
 import time
 from src.scripts.UI.gameWindow import GameWindow
 from src.scripts.game_dir.gameCoordinator import ClientGameCoordinator
+from src.scripts.music_player import MusicPlayer
 
 
 class Client:
@@ -9,6 +10,9 @@ class Client:
 		self.__client_UI = client_UI
 		self.__socket = socket.socket()
 		self.__client_UI.button_confirm.clicked.connect(self.connect_to_server)
+		self.__musicPlayer = MusicPlayer()
+
+		self.__musicPlayer.play_sound("auto")
 
 	def connect_to_server(self):
 		hostname = self.__client_UI.get_entered_hostname()
