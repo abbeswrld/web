@@ -4,6 +4,7 @@ from ui_constants import *
 import pictures
 
 
+
 class GameWindow(QMainWindow):
 	def __init__(self):
 		super().__init__()
