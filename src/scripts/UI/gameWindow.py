@@ -9,6 +9,8 @@ class GameWindow(QMainWindow):
 	def __init__(self):
 		super().__init__()
 		uic.loadUi(UI_DIR + "5word.ui", self)
+		self.who_win.hide()
+
 		self.all_btns = self.findChildren(Qt.QPushButton)
 
 		self.btns = [btn for btn in self.all_btns if not btn.objectName().startswith("let_")]
@@ -20,7 +22,7 @@ class GameWindow(QMainWindow):
 			btn.setEnabled(False)
 
 	def end_game(self, who_win: bool):
-		self.who_win.enable()
+		self.who_win.show()
 		self.who_win.setText("Вы победили!" if who_win else "Друг победил(")
 
 	def update_turn(self, which_turn):
