@@ -6,27 +6,38 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>440</width>
-    <height>158</height>
+    <width>439</width>
+    <height>102</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Expectation</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(85, 255, 255, 255), stop:1 rgba(170, 255, 255, 255))
+</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>60</x>
       <y>50</y>
-      <width>101</width>
+      <width>121</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>16</pointsize>
+      <family>MS Sans Serif</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 0, 0, 0);
+color: rgb(79, 76, 62);</string>
     </property>
     <property name="text">
      <string>Yours port:</string>
@@ -46,6 +57,11 @@
       <pointsize>16</pointsize>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 0, 0, 0);
+color: rgb(79, 76, 62);
+</string>
+    </property>
     <property name="text">
      <string>host</string>
     </property>
@@ -55,14 +71,21 @@
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>161</width>
+      <width>171</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>16</pointsize>
+      <family>MS Sans Serif</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 0, 0, 0);
+color: rgb(79, 76, 62);</string>
     </property>
     <property name="text">
      <string>Yours hostname:</string>
@@ -71,9 +94,9 @@
    <widget class="QLabel" name="s_port">
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>180</x>
       <y>50</y>
-      <width>301</width>
+      <width>231</width>
       <height>31</height>
      </rect>
     </property>
@@ -82,14 +105,16 @@
       <pointsize>16</pointsize>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 0, 0, 0);
+color: rgb(79, 76, 62);</string>
+    </property>
     <property name="text">
      <string>port</string>
     </property>
    </widget>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>
 </ui>
-

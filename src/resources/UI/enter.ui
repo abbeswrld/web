@@ -6,12 +6,16 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>441</width>
-    <height>161</height>
+    <width>430</width>
+    <height>150</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Entrance</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(85, 255, 255, 255), stop:1 rgba(170, 255, 255, 255))
+</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLineEdit" name="enter_host">
@@ -28,6 +32,16 @@
       <pointsize>16</pointsize>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+	color: rgb(79, 76, 62);
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: rgba(255, 255, 255, 0);
+    selection-background-color: darkgray;
+}</string>
+    </property>
     <property name="text">
      <string/>
     </property>
@@ -35,7 +49,7 @@
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>60</x>
       <y>50</y>
       <width>111</width>
       <height>31</height>
@@ -43,8 +57,15 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>16</pointsize>
+      <family>MS Sans Serif</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(79, 76, 62);</string>
     </property>
     <property name="text">
      <string>Enter port:</string>
@@ -61,8 +82,15 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>16</pointsize>
+      <family>MS Sans Serif</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(79, 76, 62);</string>
     </property>
     <property name="text">
      <string>Enter hostname:</string>
@@ -71,7 +99,7 @@
    <widget class="QLineEdit" name="enter_port">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>180</x>
       <y>50</y>
       <width>221</width>
       <height>31</height>
@@ -82,6 +110,16 @@
       <pointsize>16</pointsize>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+	color: rgb(79, 76, 62);
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: rgba(255, 255, 255, 0);
+    selection-background-color: darkgray;
+}</string>
+    </property>
     <property name="text">
      <string/>
     </property>
@@ -89,18 +127,27 @@
    <widget class="QPushButton" name="button_confirm">
     <property name="geometry">
      <rect>
-      <x>270</x>
+      <x>150</x>
       <y>100</y>
       <width>78</width>
       <height>24</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 0, 0, 255), stop:0.166 rgba(255, 255, 0, 255), stop:0.333 rgba(0, 255, 0, 255), stop:0.5 rgba(0, 255, 255, 255), stop:0.666 rgba(0, 0, 255, 255), stop:0.833 rgba(255, 0, 255, 255), stop:1 rgba(255, 0, 0, 255));
+color: white</string>
+    </property>
     <property name="text">
-     <string>123</string>
+     <string>connect</string>
     </property>
    </widget>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>

@@ -41,7 +41,7 @@
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-background-color: rgb(255, 85, 139, 20);
+background-color: rgb(255, 85, 139, 40);
 color: rgb(79, 76, 62);
 border-radius: 20px;
 border: 4px solid rgb(81, 80, 71);
@@ -51,7 +51,7 @@ border: 4px solid rgb(81, 80, 71);
 
 QPushButton:hover {
 	background-color: rgb(255, 85, 139, 180);
-	color: rgb(255, 255, 255);
+	color: rgb(245, 245, 245);
 	border-radius: 20px;
 	border: 4px solid rgb(81, 80, 71);
 	transition: 3s;
@@ -87,7 +87,7 @@ QPushButton:pressed {
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-background-color: rgb(255, 85, 139, 20);
+background-color: rgb(255, 85, 139, 40);
 color: rgb(79, 76, 62);
 border-radius: 20px;
 border: 4px solid rgb(81, 80, 71);
@@ -97,7 +97,7 @@ border: 4px solid rgb(81, 80, 71);
 
 QPushButton:hover {
 	background-color: rgb(255, 85, 139, 180);
-	color: rgb(255, 255, 255);
+	color: rgb(245, 245, 245);
 	border-radius: 20px;
 	border: 4px solid rgb(81, 80, 71);
 }
