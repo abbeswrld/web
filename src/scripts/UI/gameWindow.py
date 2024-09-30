@@ -1,6 +1,7 @@
 from PyQt5 import uic, Qt, QtCore
 from PyQt5.QtWidgets import QMainWindow
 from ui_constants import *
+import pictures
 
 
 class GameWindow(QMainWindow):
