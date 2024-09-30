@@ -20,4 +20,7 @@ class MusicPlayer:
 	def play_sound(self, sound_name: str):
 		if sound_name in self.__music_list:
 			self.__player.setMedia(QtMultimedia.QMediaContent(QUrl.fromLocalFile(MEDIA_DIR + sound_name + ".mp3")))
-			self.__player.play()
+		self.__player.play()
+
+	def stop(self):
+		self.__player.stop()

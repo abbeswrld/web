@@ -4,6 +4,7 @@ from PyQt5 import QtCore
 
 from src.scripts.game_dir.gameCoordinator import ServerGameCoordinator
 from src.scripts.UI.gameWindow import GameWindow
+from src.scripts.music_player import MusicPlayer
 from useful_func import create_and_start_thread
 
 
@@ -21,6 +22,10 @@ class Server:
         self.signal = self.Signal()
         self.signal.on_connect_signal.connect(self.on_connect)
 
+        self.__musicPlayer = MusicPlayer()
+
+        self.__musicPlayer.play_sound("pole-chudes-baraban")
+
         self.__server_UI.set_label_hostname(self.__hostname)
         self.__server_UI.set_label_port(self.__port)
 
@@ -37,6 +42,7 @@ class Server:
 
     def on_connect(self, msg) -> None:
         print(msg)
+        self.__musicPlayer.stop()
         self.__gw = GameWindow()
         self.__gw.show()
         self.__sgc = ServerGameCoordinator(self, self.__gw)
