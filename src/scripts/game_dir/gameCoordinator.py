@@ -71,17 +71,13 @@ class ServerGameCoordinator:
 			self.send_message_to_clientGC(letter)
 
 			self.__gameUI.update_turn(self.__game.players_turn)
-			try:
-				if self.__game.check_win():
+			if self.__game.check_win():
 
-					self.__musicPlayer.play_sound("winner_music")
+				self.__musicPlayer.play_sound("winner_music")
 
-					self.__gameUI.end_game(True)
+				self.__gameUI.end_game(True)
 
-					self.send_message_to_clientGC("end")
-
-			except Exception as e:
-				print(e)
+				self.send_message_to_clientGC("end")
 
 	def find_button_by_text(self, text):
 		for btn in self.__gameUI.btns:
@@ -89,16 +85,13 @@ class ServerGameCoordinator:
 				return btn
 
 	def update_answer_btns(self, let):
-		try:
-			if let in self.__game.word:
-				index_of_answer_letter = self.__game.word.index(let)
-				self.__gameUI.btns_let[index_of_answer_letter].setText(let)
-				self.__musicPlayer.play_sound("pole_letter_correct")
-				return True
-			self.__musicPlayer.play_sound("pole_letter_wrong")
-			return False
-		except Exception as e:
-			print(e)
+		if let in self.__game.word:
+			index_of_answer_letter = self.__game.word.index(let)
+			self.__gameUI.btns_let[index_of_answer_letter].setText(let)
+			self.__musicPlayer.play_sound("pole_letter_correct")
+			return True
+		self.__musicPlayer.play_sound("pole_letter_wrong")
+		return False
 
 class ClientGameCoordinator:
 	def __init__(self, player, UI):
@@ -171,16 +164,13 @@ class ClientGameCoordinator:
 				return btn
 
 	def update_answer_btns(self, let):
-		try:
-			if let in self.__game.word:
-				index_of_answer_letter = self.__game.word.index(let)
-				self.__gameUI.btns_let[index_of_answer_letter].setText(let)
-				self.__musicPlayer.play_sound("pole_letter_correct")
-				return True
-			self.__musicPlayer.play_sound("pole_letter_wrong")
-			return False
-		except Exception as E:
-			print(E)
+		if let in self.__game.word:
+			index_of_answer_letter = self.__game.word.index(let)
+			self.__gameUI.btns_let[index_of_answer_letter].setText(let)
+			self.__musicPlayer.play_sound("pole_letter_correct")
+			return True
+		self.__musicPlayer.play_sound("pole_letter_wrong")
+		return False
 
 
 
