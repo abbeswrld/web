@@ -20,4 +20,13 @@ class GameWindow(QMainWindow):
 			btn.setEnabled(False)
 
 	def end_game(self, who_win: bool):
+		self.who_win.enable()
 		self.who_win.setText("Вы победили!" if who_win else "Друг победил(")
+
+	def update_turn(self, which_turn):
+		if which_turn:
+			self.your_turn.setStyleSheet("background-color:red")  # TODO alternative-background-color
+			self.your_turn.setText("Не ваш ход")
+		else:
+			self.your_turn.setStyleSheet("background-color:green")
+			self.your_turn.setText("ваш ход")

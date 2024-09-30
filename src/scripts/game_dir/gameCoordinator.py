@@ -1,7 +1,6 @@
 import json
 import random
 
-from PyQt5 import QtCore
 from src.scripts.game_dir.game import Game
 
 from useful_func import create_and_start_thread
@@ -26,6 +25,8 @@ class ServerGameCoordinator:
 		for btn in self.__gameUI.btns:
 			btn.clicked.connect(self.on_button_click)
 
+		self.__gameUI.update_turn(self.__game.players_turn)
+
 		create_and_start_thread(self.handle_message_from_client)
 
 
@@ -40,6 +41,8 @@ class ServerGameCoordinator:
 
 					if not self.update_answer_btns(data):
 						self.__game.change_players_turn()
+
+					self.__gameUI.update_turn(self.__game.players_turn)
 
 			else:
 				if data == "end":
@@ -61,6 +64,8 @@ class ServerGameCoordinator:
 				self.__game.change_players_turn()
 
 			self.send_message_to_clientGC(letter)
+
+			self.__gameUI.update_turn(self.__game.players_turn)
 
 			if self.__game.check_win():
 				self.__gameUI.end_game(True)
@@ -90,6 +95,8 @@ class ClientGameCoordinator:
 
 		create_and_start_thread(self.handle_message_from_server)
 
+		self.__gameUI.update_turn(not self.__game.players_turn)
+
 		for btn in self.__gameUI.btns:
 			btn.clicked.connect(self.on_button_click)
 
@@ -104,6 +111,8 @@ class ClientGameCoordinator:
 					self.__game.on_letter_use(data)
 					if not self.update_answer_btns(data):
 						self.__game.change_players_turn()
+
+					self.__gameUI.update_turn(not self.__game.players_turn)
 
 			else:
 				if data == "end":
@@ -129,9 +138,14 @@ class ClientGameCoordinator:
 			except Exception as e:
 				print(e)
 
+			self.__gameUI.update_turn(not self.__game.players_turn)
+
 			if self.__game.check_win():
 				self.__gameUI.end_game(True)
 
+				self.send_message_to_serverGC("end")
+
+				
 	def find_button_by_text(self, text):
 		for btn in self.__gameUI.btns:
 			if btn.text() == text:
