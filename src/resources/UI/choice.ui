@@ -11,9 +11,16 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string/>
+   <string>выбор быстреньки</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(85, 255, 255, 255), stop:1 rgba(170, 255, 255, 255))
+</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
    <widget class="QPushButton" name="create_server_btn">
     <property name="geometry">
      <rect>
@@ -27,6 +34,31 @@
      <font>
       <pointsize>20</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color: rgb(255, 85, 139, 20);
+color: rgb(79, 76, 62);
+border-radius: 20px;
+border: 4px solid rgb(81, 80, 71);
+}
+
+
+
+QPushButton:hover {
+	background-color: rgb(255, 85, 139, 180);
+	color: rgb(255, 255, 255);
+	border-radius: 20px;
+	border: 4px solid rgb(81, 80, 71);
+	transition: 3s;
+}
+
+QPushButton:pressed {	
+	background-color:rgb(141, 47, 78);
+	color: rgb(255, 255, 255);
+	border-radius: 20px;
+	border: 4px solid rgb(40, 40, 30);
+}</string>
     </property>
     <property name="text">
      <string>Server</string>
@@ -46,6 +78,30 @@
       <pointsize>20</pointsize>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color: rgb(255, 85, 139, 20);
+color: rgb(79, 76, 62);
+border-radius: 20px;
+border: 4px solid rgb(81, 80, 71);
+}
+
+
+
+QPushButton:hover {
+	background-color: rgb(255, 85, 139, 180);
+	color: rgb(255, 255, 255);
+	border-radius: 20px;
+	border: 4px solid rgb(81, 80, 71);
+}
+
+QPushButton:pressed {	
+	background-color:rgb(141, 47, 78);
+	color: rgb(255, 255, 255);
+	border-radius: 20px;
+	border: 4px solid rgb(40, 40, 30);
+}</string>
+    </property>
     <property name="text">
      <string>Client</string>
     </property>
@@ -56,4 +112,3 @@
  <resources/>
  <connections/>
 </ui>
-
