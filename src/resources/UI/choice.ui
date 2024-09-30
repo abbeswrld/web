@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>265</width>
-    <height>157</height>
+    <width>268</width>
+    <height>132</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -32,7 +32,11 @@
     </property>
     <property name="font">
      <font>
+      <family>MS Sans Serif</family>
       <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
      </font>
     </property>
     <property name="styleSheet">
@@ -75,7 +79,10 @@ QPushButton:pressed {
     </property>
     <property name="font">
      <font>
-      <pointsize>20</pointsize>
+      <family>MS Sans Serif</family>
+      <pointsize>22</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -107,7 +114,6 @@ QPushButton:pressed {
     </property>
    </widget>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>
