@@ -6,7 +6,7 @@ from ui_constants import *
 class MusicPlayer:
 	def __init__(self):
 		self.__player = QtMultimedia.QMediaPlayer()
-		self.__player.setVolume(5)
+		self.__player.setVolume(30)
 		self.__music_list = [
 			"auto",                 # 0     o_O
 			"mem",                  # 1     O_o

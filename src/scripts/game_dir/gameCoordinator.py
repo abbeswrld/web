@@ -40,7 +40,7 @@ class ServerGameCoordinator:
 			if len(data) == 1:
 				if self.__game.players_turn:
 					btn = self.find_button_by_text(data)
-					btn.setEnabled(False)
+					btn.hide()
 
 					if not self.update_answer_btns(data):
 						self.__game.change_players_turn()
@@ -61,12 +61,15 @@ class ServerGameCoordinator:
 		print(self.__game.players_turn)
 		btn = self.__gameUI.sender()
 		if not self.__game.players_turn:
-			btn.setEnabled(False)
 			letter = btn.text()
+			btn.hide()
 
 			self.__game.on_letter_use(letter)
 			if not self.update_answer_btns(letter):
 				self.__game.change_players_turn()
+				self.__musicPlayer.play_sound("pole_letter_wrong")
+			else:
+				self.__musicPlayer.play_sound("pole_letter_correct")
 
 			self.send_message_to_clientGC(letter)
 
@@ -88,9 +91,7 @@ class ServerGameCoordinator:
 		if let in self.__game.word:
 			index_of_answer_letter = self.__game.word.index(let)
 			self.__gameUI.btns_let[index_of_answer_letter].setText(let)
-			self.__musicPlayer.play_sound("pole_letter_correct")
 			return True
-		self.__musicPlayer.play_sound("pole_letter_wrong")
 		return False
 
 class ClientGameCoordinator:
@@ -117,7 +118,7 @@ class ClientGameCoordinator:
 			if len(data) == 1:
 				if not self.__game.players_turn:
 					btn = self.find_button_by_text(data)
-					btn.setEnabled(False)
+					btn.hide()
 
 					self.__game.on_letter_use(data)
 					if not self.update_answer_btns(data):
@@ -136,12 +137,15 @@ class ClientGameCoordinator:
 	def on_button_click(self):
 		btn = self.__gameUI.sender()
 		if self.__game.players_turn:
-			btn.setEnabled(False)
+			btn.hide()
 			letter = btn.text()
 
 			self.__game.on_letter_use(letter)
 			if not self.update_answer_btns(letter):
 				self.__game.change_players_turn()
+				self.__musicPlayer.play_sound("pole_letter_wrong")
+			else:
+				self.__musicPlayer.play_sound("pole_letter_correct")
 
 			try:
 				self.send_message_to_serverGC(letter)
