@@ -15,11 +15,14 @@ class Client:
 		self.__musicPlayer.play_sound("auto")
 
 	def connect_to_server(self):
-		hostname = self.__client_UI.get_entered_hostname()
-		port = self.__client_UI.get_entered_port()
-		hostname = hostname if hostname else "mamin_papa_ded"
-		self.__socket.connect((hostname, port))
-		self.on_connect()
+		try:
+			hostname = self.__client_UI.get_entered_hostname()
+			port = self.__client_UI.get_entered_port()
+			hostname = hostname if hostname else "mamin_papa_ded"
+			self.__socket.connect((hostname, port))
+			self.on_connect()
+		except Exception as e:
+			print(e)
 
 	def on_connect(self):
 		self.__gw = GameWindow()
