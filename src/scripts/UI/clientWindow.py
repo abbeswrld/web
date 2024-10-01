@@ -1,5 +1,5 @@
-from PyQt5 import uic
-from PyQt5.QtWidgets import QMainWindow
+from PyQt5 import uic, QtCore
+from PyQt5.QtWidgets import QMainWindow, QApplication
 
 from ui_constants import *
 
@@ -21,4 +21,8 @@ class ClientWindow(QMainWindow):
 			return int(self.enter_port.text())
 		except Exception as e:
 			print(e)
-			return 5050
+			return 9090
+
+	def closeEvent(self, event):
+		QApplication.quit()
+		event.accept()

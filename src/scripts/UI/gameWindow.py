@@ -1,5 +1,5 @@
 from PyQt5 import uic, Qt, QtCore
-from PyQt5.QtWidgets import QMainWindow
+from PyQt5.QtWidgets import QMainWindow, QApplication
 from ui_constants import *
 import pictures
 
@@ -59,7 +59,7 @@ class GameWindow(QMainWindow):
 				border: 4px solid rgb(255, 40, 130)
 			}
 			""")
-			self.your_turn.setText("Не ваш ход")
+			self.your_turn.setText("НE ваш ход")
 		else:
 			self.your_turn.setStyleSheet("""
 			QPushButton {
@@ -71,3 +71,7 @@ class GameWindow(QMainWindow):
 			}
 			""")
 			self.your_turn.setText("ваш ход")
+
+	def closeEvent(self, event):
+		QApplication.quit()
+		event.accept()

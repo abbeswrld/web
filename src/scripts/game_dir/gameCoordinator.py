@@ -161,7 +161,6 @@ class ClientGameCoordinator:
 
 				self.send_message_to_serverGC("end")
 
-				
 	def find_button_by_text(self, text):
 		for btn in self.__gameUI.btns:
 			if btn.text() == text:

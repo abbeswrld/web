@@ -1,5 +1,5 @@
 from PyQt5 import uic, QtCore
-from PyQt5.QtWidgets import QMainWindow
+from PyQt5.QtWidgets import QMainWindow, QApplication
 
 from ui_constants import *
 
@@ -20,3 +20,7 @@ class ServerWindow(QMainWindow):
 			port = "5050"
 			print(e)
 		self.s_port.setText(port)
+
+	def closeEvent(self, event):
+		QApplication.quit()
+		event.accept()
