@@ -1,4 +1,4 @@
-from PyQt5 import uic, Qt, QtCore
+from PyQt5 import uic, Qt, QtCore, QtGui
 from PyQt5.QtWidgets import QMainWindow, QApplication
 from ui_constants import *
 import pictures
@@ -10,6 +10,8 @@ class GameWindow(QMainWindow):
 		super().__init__()
 		uic.loadUi(UI_DIR + "5word.ui", self)
 		self.who_win.hide()
+
+		self.setWindowIcon(QtGui.QIcon(IMAGE_DIR + 'kubik.png'))
 
 		self.all_btns = self.findChildren(Qt.QPushButton)
 

@@ -1,4 +1,4 @@
-from PyQt5 import uic
+from PyQt5 import uic, QtGui
 from PyQt5.QtWidgets import QMainWindow
 from src.scripts.server_slon import Server
 from src.scripts.client_slon import Client
@@ -10,6 +10,7 @@ class MainWindow(QMainWindow):
 	def __init__(self):
 		super().__init__()
 		uic.loadUi(UI_DIR + "choice.ui", self)
+		self.setWindowIcon(QtGui.QIcon(IMAGE_DIR + 'kubik.png'))
 		self.create_server_btn.clicked.connect(self.on_create_host_button_click)
 		self.find_server_btn.clicked.connect(self.on_find_host_button_click)
 

@@ -1,4 +1,4 @@
-from PyQt5 import uic, QtCore
+from PyQt5 import uic, QtCore, QtGui
 from PyQt5.QtWidgets import QMainWindow, QApplication
 
 from ui_constants import *
@@ -9,6 +9,8 @@ class ServerWindow(QMainWindow):
 		super().__init__()
 		self.closed = QtCore.pyqtSignal(str)
 		uic.loadUi(UI_DIR + "waiting.ui", self)
+		self.setWindowIcon(QtGui.QIcon(IMAGE_DIR + 'kubik.png'))
+
 
 	def set_label_hostname(self, hostname: str):
 		self.s_host.setText(hostname)

@@ -1,4 +1,4 @@
-from PyQt5 import uic, QtCore
+from PyQt5 import uic, QtCore, QtGui
 from PyQt5.QtWidgets import QMainWindow, QApplication
 
 from ui_constants import *
@@ -8,6 +8,7 @@ class ClientWindow(QMainWindow):
 	def __init__(self):
 		super().__init__()
 		uic.loadUi(UI_DIR + "enter.ui", self)
+		self.setWindowIcon(QtGui.QIcon(IMAGE_DIR + 'kubik.png'))
 
 	def get_entered_hostname(self):
 		try:
