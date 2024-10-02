@@ -7,7 +7,7 @@ Two computers must be on the same Wi-Fi network
 # Technologies
 Python 3.12  
 Socket 3.12  
-PyQT5 5.15.10
+PyQT5 5.15.2
 
 ## Motivation
 Project objective - Figure out how to connect two computers
